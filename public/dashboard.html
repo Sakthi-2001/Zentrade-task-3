@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles2.css">
+  </head>
+  <body>
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Company Metrics</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">$64,492</p>
+            </div>
+            <span class="text-primary font-weight-bold">Total Revenue</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">$608</p>
+            </div>
+            <span class="text-primary font-weight-bold">Total Jobs Avg</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">106</p>
+            </div>
+            <span class="text-primary font-weight-bold">Tickets Created</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">66</p>
+            </div>
+            <span class="text-primary font-weight-bold">Tickets Scheduled</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">$19,304.52</p>
+            </div>
+            <span class="text-primary font-weight-bold">Outstanding Amount</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">0</p>
+            </div>
+            <span class="text-primary font-weight-bold">Memberships Sold</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">8</p>
+            </div>
+            <span class="text-primary font-weight-bold">Jobs Completed</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">2</p>
+            </div>
+            <span class="text-primary font-weight-bold">Total Cancelled</span>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">Revenue By job Location</p>
+            <div id="bar-chart1"></div>
+            <p style="display: flex; justify-content: center;">Revenue for december 2023</p>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Revenue By job type</p>
+            <div id="bar-chart2"></div>
+            <p style="display: flex; justify-content: center;">Revenue for december 2023</p>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts2.js"></script>
+  </body>
+</html>

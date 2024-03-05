@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    function validateForm() {
+      var email = document.forms["myForm"]["email"].value;
+      var password = document.forms["myForm"]["password"].value;
+      var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      var passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@]{8,}$/;
+    
+      if (!email.match(emailRegex)) {
+        alert("Invalid email format. Please enter a valid email address.");
+        return false;
+      }
+      
+      if (!password.match(passwordRegex)) {
+        alert("Invalid password format. Please enter a valid password with at least one uppercase letter, one number, and no special characters other than @.");
+        return false;
+      }
+    }
+    </script>
+  <meta charset="UTF-8">
+  <title>Zentrades Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      width: 400px;
+      padding: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      background-image: url('background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      padding-left: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Added background color to enhance readability */
+    }
+
+    input[type="checkbox"] {
+      margin-top: 10px;
+      appearance: none; /* Remove default checkbox style */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #FF0000; /* Red border */
+      border-radius: 3px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    input[type="checkbox"]:checked::before {
+      content: "\2713"; /* Unicode character for check mark */
+      display: block;
+      color: #FF0000; /* Red color */
+    }
+
+    label[for="remember"] {
+      display: block;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #FF0000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: white; /* Changed color to white */
+      text-decoration: none;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 240px;
+      height: auto;
+    }
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Added to center align horizontally */
+    }
+  </style>
+</head>
+<body>
+  <form name="myForm" action="/login" onsubmit="return validateForm()" method="post">
+    <h1><img src="./Zentraders logo.png" alt="Zentrades logo" class="logo"></h1>
+    <input type="email" id="email" name="email" placeholder="E-mail address" required>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+    <div class="center"> <!-- Added a div with the center class -->
+      <input type="checkbox" id="remember" name="remember" value="remember">
+      <label for="remember">Remember me</label>
+    </div>
+    <input type="submit" value="Sign In">
+    <a href="/forgot-password">Forgot your password?</a>
+  </form>
+</body>
+</html>
