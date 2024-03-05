@@ -47,7 +47,7 @@ function sendForgotPasswordEmail() {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: '102120057.thermo@gmail.com', 
+      user: '102120057.thermo@gmail.com', //Enter your email
       pass: 'laeo dwte hknt pxfv'  //Enter your app password generated through google 2 factor authentication
     }
   });
