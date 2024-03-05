@@ -55,7 +55,7 @@ function sendForgotPasswordEmail() {
   
   const mailOptions = {
     from: '102120057.thermo@gmail.com', //Enter your email
-    to: 'dhanushdan26@gmail.com',      //support@zentrades.pro
+    to: 'support@zentrades.pro',   
     subject: 'Forgot Password',
     text: 'Forgot password request has been sent to the Zentrades.'
   };
