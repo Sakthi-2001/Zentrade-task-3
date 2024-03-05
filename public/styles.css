@@ -48,14 +48,14 @@ h2 {
 
 .bar {
     position: relative;
-    height: 30px; /* Adjust the height of each bar */
+    height: 30px; 
     margin-bottom: 10px;
-    background-color: orange; /* Set the bar color to orange */
+    background-color: orange; 
 }
 
 .bar-label {
     position: absolute;
-    left: -120px; /* Adjust according to the space required for labels */
+    left: -120px; 
     top: 50%;
     transform: translateY(-50%);
     width: 100px;
@@ -65,7 +65,7 @@ h2 {
 
 .bar-value {
     position: absolute;
-    bottom: -20px; /* Adjust according to the space required for values */
+    bottom: -20px; 
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
