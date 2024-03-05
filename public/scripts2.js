@@ -1,4 +1,4 @@
-// BAR CHART with swapped x and y values
+
 const barChartOptions1 = {
   series: [
     {
@@ -25,7 +25,7 @@ const barChartOptions1 = {
     bar: {
       distributed: true,
       borderRadius: 4,
-      horizontal: true, // Change horizontal to true
+      horizontal: true, 
       columnWidth: '40%',
     },
   },
@@ -40,7 +40,7 @@ const barChartOptions1 = {
   },
 };
 
-const barChartOptions2 = { // Different options for the second chart if needed
+const barChartOptions2 = { 
   series: [
     {
       data: [
@@ -64,7 +64,7 @@ const barChartOptions2 = { // Different options for the second chart if needed
     bar: {
       distributed: true,
       borderRadius: 4,
-      horizontal: true, // Change horizontal to true
+      horizontal: true, 
       columnWidth: '40%',
     },
   },
@@ -79,14 +79,14 @@ const barChartOptions2 = { // Different options for the second chart if needed
   },
 };
 
-// Render the first bar chart
+
 const barChart1 = new ApexCharts(
   document.querySelector('#bar-chart1'),
   barChartOptions1
 );
 barChart1.render();
 
-// Render the second bar chart
+
 const barChart2 = new ApexCharts(
   document.querySelector('#bar-chart2'),
   barChartOptions2
