@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         value.textContent = `$${revenue[i]}`;
         bar.appendChild(value);
         
-        bar.style.width = `${revenue[i] / 100}px`; // Adjust the width for better visualization
+        bar.style.width = `${revenue[i] / 100}px`; 
         barsContainer.appendChild(bar);
     }
 });
